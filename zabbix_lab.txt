@@ -46,7 +46,7 @@ $ wget http://repo.zabbix.com/zabbix/3.0/ubuntu/pool/main/z/zabbix-release/zabbi
 
 $ dpkg -i zabbix-release_3.0-1+xenial_all.deb
 $ apt-get update
-$ apt-get install zabbix-sender zabbix-server-pgsql zabbix-proxy-sqlite3 zabbix-get zabbix-frontend-php zabbix-agent
+$ apt-get install zabbix-sender zabbix-server-pgsql zabbix-proxy-sqlite3 zabbix-get zabbix-frontend-php zabbix-agent bc
 $ apt-get install libapache2-mod-php
 $ apt-get install php-xmlwriter php-xmlreader php-bcmath php-mbstring
 
@@ -87,6 +87,8 @@ $ apt-get install php-snmp snmp snmp-mibs-downloader snmpd snmptt
 
 
 
+## UserParameter
+UserParameter=custom.count.files[*],echo "`ls -a $1 | wc -l` - 2 " | bc
 
 
 
