@@ -6,9 +6,13 @@ Repositório de Templates e Scripts Zabbix.
 #######   Instalação Postgres   ######### https://www.postgresql.org/download/linux/ubuntu/
 
 echo "deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
+
 apt-get update
+
 apt-get install postgresql-contrib-9.5
+
 
 cat <<EOF > /etc/postgresql/9.5/main/pg_hba.conf
 local   all             postgres                                trust
