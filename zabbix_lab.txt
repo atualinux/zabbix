@@ -70,6 +70,9 @@ apt-get install php-snmp snmp snmp-mibs-downloader snmpd snmptt
 ## UserParameter
 UserParameter=custom.count.files[*],echo "`ls -a $1 | wc -l` - 2 " | bc
 
+### Servers
+Server=127.0.0.1,192.168.8.3,192.168.8.2,192.168.8.1,192.168.8.7,192.168.8.6,192.168.8.12,192.168.8.11,192.168.8.8,192.168.8.9,192.168.8.10
+
 
 
 
