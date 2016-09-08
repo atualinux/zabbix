@@ -34,7 +34,7 @@ apt-get install php-xmlwriter php-xmlreader php-bcmath php-mbstring php-pgsql
 
 
 #### ajustar php ini
-vi /etc/php/7.0/apache2/php.ini 
+sudo gedit /etc/php/7.0/apache2/php.ini 
 
 post_max_size = 16M
 max_execution_time = 300
